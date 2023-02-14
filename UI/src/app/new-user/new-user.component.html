@@ -1,0 +1,49 @@
+<div class="new-user">
+    <form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col">
+                <label for="Email" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="Email" formControlName="email">
+            </div>
+            <div class="col">
+                <label for="First_Name" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="First_Name" formControlName="first_name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="Last_Name" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="Last_Name" formControlName="last_name">
+            </div>
+            <div class="col">
+                <label for="Address" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="Address" formControlName="address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="City" class="form-label">City:</label>
+                <input type="text" class="form-control" id="City" formControlName="city">
+            </div>
+            <div class="col">
+                <label for="Country" class="form-label">Country:</label>
+                <input type="text" class="form-control" id="Country" formControlName="country">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="Phone" class="form-label">Phone:</label>
+                <input type="text" class="form-control" id="Phone" formControlName="phone">
+            </div>
+            <div class="col">
+                <label for="Password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="Password" formControlName="password">
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-success" style="background-color: slategrey;" [disabled]="!newUserForm.valid">Register</button>
+            </div>
+        </div>
+    </form>
+</div>

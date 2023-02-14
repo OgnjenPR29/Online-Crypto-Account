@@ -1,0 +1,28 @@
+<div class="validation">
+    <form [formGroup]="fundsForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col">
+                <label for="CardNumber" class="form-label">Card Number:</label>
+                <input type="text" class="form-control" id="CardNumber" formControlName="CardNumber">
+            </div>
+            <div class="col">
+                <label for="CardCode" class="form-label">Card Code:</label>
+                <input type="text" class="form-control" id="CardCode" formControlName="CardCode">
+            </div>
+            <div class="col">
+                <label for="Amount" class="form-label">Amount:</label>
+                <input type="number" class="form-control" id="Amount" formControlName="Amount">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label class="form-label">{{message}}</label>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-success" style="background-color: slategrey;" [disabled]="!fundsForm.valid">Add</button>
+            </div>
+        </div>
+    </form>
+</div>

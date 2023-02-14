@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="/home">CryptoExchange</a>
+      <form class="d-flex">
+        <a *ngIf="!CheckLogIn()" class="btn btn-light mr-3" href="/login">Login</a>
+        <a *ngIf="CheckLogIn()" (click)="logout()" style="background-color: red; color: white;" class="btn btn-light mr-3">Logout</a>
+        <a *ngIf="!CheckLogIn()" class="btn btn-light mr-3" href="/register">Register</a>
+        <a *ngIf="CheckLogIn()" class="btn btn-light mr-3" href="/home">Home</a>
+        <a *ngIf="CheckLogIn()" class="btn btn-light mr-3" href="/my-profile">My Profile</a>
+      </form>
+    </div>
+</nav>
+<router-outlet></router-outlet>

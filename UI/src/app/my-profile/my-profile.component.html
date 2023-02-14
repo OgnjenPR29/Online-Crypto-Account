@@ -1,0 +1,66 @@
+<div *ngIf="loaded" class="glavni">
+    <div class="profile-overview">
+    <h3 style="text-align: center;">{{profile.First_name}} {{profile.Last_name}}</h3>
+    <hr>
+    <br>
+    <div>
+      <label>Name:</label> <label>{{profile.First_name}}</label>
+    </div>
+    <div>
+      <label>Last Name:</label> <label>{{profile.Last_name}}</label>
+    </div>
+    <div>
+      <label>Email:</label> <label>{{profile.Email}}</label>
+    </div>
+    <div>
+      <label>Address:</label> <label>{{profile.Address}}</label>
+    </div>
+    <div>
+      <label>Country:</label> <label>{{profile.Country}}</label>
+    </div>
+    <div>
+    <label>City:</label> <label>{{profile.City}}</label>
+    </div>
+    <div>
+      <label>Phone:</label> <label>{{profile.Phone}}</label>
+    </div>
+    <br><br>
+    <div>
+    <a class="btn btn-light mr-3" style="background-color:midnightblue; color: white;" href="/edit-user" >Edit profile</a>
+    </div>  
+</div>
+
+  <div class="balance" >
+    <h1 style="text-align: center; color: green; margin-top: 15px;">Your balance:</h1>
+    <hr style="width: 50%; border: 1px solid green;">
+    <div><br>
+    <label>Dollars($):</label> <label>{{profile.Dollar}}</label>
+    </div><br>
+    <div >
+    <label>BTC:</label> <label>{{profile.BTC}}</label>
+    </div>
+    <br>
+    <div>    
+    <label>ETH:</label> <label>{{profile.ETH}}</label>
+    </div>
+    <br>
+    <div>
+    <label>XRP:</label> <label>{{profile.XRP}}</label>
+    </div>
+    <br>
+    <div>
+    <label>DOGE:</label> <label>{{profile.DOGE}}</label>
+    </div>
+    <br>
+    <div>
+    <label>BNB:</label> <label>{{profile.BNB}}</label>
+    </div>
+    <a class="btn btn-light mr-3" style="background-color: brown; color:white; margin-top: 15px;" href="/transfer">TRANSFER</a>
+    <a class="btn btn-light mr-3" style="background-color: brown; color:white; margin-top: 15px;" href="/history">SEE HISTORY</a>
+    <a class="btn btn-light mr-3" style="background-color: green; color: white; margin-top: 15px; margin-left: 52%;" href="/buy-currency" >BUY MORE</a>
+    <a class="btn btn-light mr-3" style="background-color: green; color: white; margin-top: 15px;  margin-left: 5px;" href="/exchange-currency" >EXCHANGE</a>
+    <a class="btn btn-light mr-3" style="background-color: green; color: white; margin-top: 15px;  margin-left: 5px;" href="/add-funds" >ADD FUNDS</a>
+
+
+</div>
+</div>  

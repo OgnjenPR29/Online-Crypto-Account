@@ -1,1 +1,3 @@
-# Online-Crypto-Account
+# DRS projekat
+
+pip install -r requirements.txt

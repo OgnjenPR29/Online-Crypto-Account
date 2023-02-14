@@ -1,0 +1,76 @@
+.profile-overview {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 100vh;
+    border-right: 3px solid green;
+  }
+  
+  .profile-overview   hr {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+
+  .glavni{
+    display: flex;
+  }
+
+  .profile-overview hr{
+    color: black;
+  }
+
+  .balance{
+    width: 80%;
+    background-color:lightgreen;
+    border: 1px solid #ccc;
+    text-align: center
+  }
+
+  .profile-overview h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    color: #343a40;
+    display: inline-block;
+
+  }
+  
+  .profile-overview label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 150px;
+    text-align: left;
+  }
+  
+  .balance label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: x-large;
+    width: 200px;
+    text-align: center;
+  }
+
+  .profile-overview div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .profile-overview button{
+    display: inline-block;
+    background-color: green;
+    color: white;
+    width: 100px;
+    text-align: left;
+    border: 0ch;
+  }
+
+  

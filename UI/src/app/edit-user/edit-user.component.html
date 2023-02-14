@@ -1,0 +1,47 @@
+<div class="new-user">
+    <form >
+        <div class="row">
+            <div class="col">
+                <label for="Email" class="form-label">Email:</label>
+            <input type="text" disabled="true" #email name="Email" [(ngModel)]="data.Email"  class="form-control" id="Email" >
+            </div>
+            <div class="col">
+                <label for="First_Name" class="form-label">First Name:</label>
+                <input type="text" #first_name class="form-control" [(ngModel)]="data.First_name" id="First_Name" name="first_name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="Last_Name" class="form-label">Last Name:</label>
+                <input type="text" #last_name class="form-control" id="Last_Name" [(ngModel)]="data.Last_name" name="last_name">
+            </div>
+            <div class="col">
+                <label for="Address" class="form-label">Address:</label>
+                <input type="text" #address class="form-control" id="Address" [(ngModel)]="data.Address" name="address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="City" class="form-label">City:</label>
+                <input type="text" #city class="form-control" id="City" name="city" [(ngModel)]="data.City">
+            </div>
+            <div class="col">
+                <label for="Country" class="form-label">Country:</label>
+                <input type="text" #country class="form-control" id="Country" name="country" [(ngModel)]="data.Country">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="Phone" class="form-label">Phone:</label>
+                <input type="text" #phone class="form-control" id="Phone" [(ngModel)]="data.Phone" name="phone">
+            </div>
+
+        </div>
+ 
+        <div class="row pt-3">
+            <div class="col-auto">
+                <button type="submit" (click)="onSubmit(email.value, first_name.value, last_name.value, address.value, city.value,country.value, phone.value)"class="btn btn-success" style="background-color: slategrey;">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

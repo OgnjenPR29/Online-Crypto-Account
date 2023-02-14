@@ -1,0 +1,24 @@
+<div class="validation">
+    <form [formGroup]="validationForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col">
+                <label for="CardNumber" class="form-label">Card Number:</label>
+                <input type="text" class="form-control" id="CardNumber" formControlName="CardNumber">
+            </div>
+            <div class="col">
+                <label for="CardCode" class="form-label">Card Code:</label>
+                <input type="text" class="form-control" id="CardCode" formControlName="CardCode">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label class="form-label">{{message}}</label>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-success" style="background-color: slategrey;" [disabled]="!validationForm.valid">Validate</button>
+            </div>
+        </div>
+    </form>
+</div>

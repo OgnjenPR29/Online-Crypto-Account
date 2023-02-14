@@ -1,0 +1,24 @@
+<div style="margin-top: 50px;">
+    <h3 style="text-align: center; margin-bottom: 20px;">Log in to see your account!</h3>
+<form (ngSubmit)="onSubmit()">
+    <label>
+      Username:
+      <input type="text" [(ngModel)]="email" id="email" name="email" [ngClass]="{'error': !email}">
+      <label *ngIf="!email" style="color: red;">This field is required!</label>
+    </label>
+    <br>
+    <label>
+      Password:
+      <input type="password" [(ngModel)]="password" id="password" name="password" [ngClass]="{'error': !password}">
+      <label *ngIf="!email" style="color: red;">This field is required!</label>
+    </label>
+    <br>
+    <button type="submit">Log In</button>
+  </form>
+  
+</div>
+<footer>
+    <hr>
+    <p style="display: inline-block;">Don't have a profile? Sing up!</p>&nbsp;
+    <a routerLink="/register">Register</a>
+  </footer>

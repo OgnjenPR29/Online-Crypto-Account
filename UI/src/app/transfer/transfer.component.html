@@ -1,0 +1,20 @@
+<h1 style="text-align: center;">Transfer funds:</h1>
+
+<form style="margin-top: 5%;" [formGroup]="transferForm" (ngSubmit)="onSubmit()">
+    <label for="reciever" style="font-weight: bold;">Recipient:</label>
+    <input type="text" id="reciever" name="reciever" formControlName="reciever" required>
+    <br>
+    <label for="amount" style="font-weight: bold;">Amount:</label>
+    <input type="number" style="width: 70%;"  id="amount" name="amount" min="0" step="0.01" formControlName="amount" required>
+    <select id="currency" name="currency"  formControlName="currency" style="width: 30%;">
+        <option *ngFor="let currency of currencyList" [value]="currency.name">{{currency.name}}</option>
+    </select>
+    <br>
+    <input type="submit" value="Transfer">
+</form>
+<br>
+<br>
+
+<a style="text-align: center; margin-left: 45%;" href="/buy-currency">Buy more</a>&nbsp;&nbsp;
+<a style="text-align: center;" href="/exchange-currency">Exchange</a>
+
